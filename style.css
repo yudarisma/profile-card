@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+.profile-card img{
+    width: 155px;
+    border-radius: 50%;
+    border: 2px solid white;
+    cursor: pointer;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgb(12, 41, 41);
+}
+.profile-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 3em;
+    padding: 2% 2%;
+    border-radius: 1em;
+    background-color: rgba(red, green, blue, alpha);
+    backdrop-filter: blur(50px);
+    border: 1px solid rgba(red, green, blue, alpha);
+    color: white;
+}
+.numbers-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2em;
+}
+.profile-card .btn-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+.btn-box button{
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-bottom: 1em;
+    cursor: pointer;
+    transition: 0.3s ease;
+    border: 2px solid transparent;
+}
+.btn-box .follow{
+    background-color: white;
+    color: black;
+}
+.btn-box .follow:hover{
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+}
+.btn-box .message{
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+}
+.btn-box .message:hover{
+    background-color: white;
+    color: black;
+}
+.numbers-grid .box p:last-child{
+    font-weight: 400;
+    opacity: 0.8;
+}
+.info-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1em;
+}
+@media(max-width: 900px){
+    .profile-card .numbers-grid{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    } 
+    .btn-box bottom{
+        padding: 12px 20px;
+        font-size: 14px;
+        border-radius: 5px;
+        cursor: pointer;
+        border: 2px solid transparent;
+        transition: 0.3s ease;
+    }
+}
